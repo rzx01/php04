@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h3 id="login">WELCOME</h3>
+    <h3>Register your account</h3>
+    <img alt="testing" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" id="image">
+  </header>
+
+  <form action="../backend/signup.php" method="POST">
+    <div class="form-row">
+      <input type="text" placeholder="First Name" name="first_name" required>
+      <input type="text" placeholder="Last Name" name="last_name" required>
+    </div>
+    <div class="form-row">
+      <input type="text" placeholder="Roll No/ID" name="roll_no" required>
+      <input type="tel" placeholder="Contact Number" name="contact_number" required>
+    </div>
+    <input type="email" placeholder="Email" name="email" required>
+    <div class="form-row">
+      <input type="password" placeholder="Password" name="password" required>
+      <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+    </div>
+    <button type="submit" value="Submit">Register</button>
+  </form>
+
+  <footer>
+    <h5 id="signin">Already Have an account?</h5>
+    <a href="./login.html" id="register_page">Log in</a>
+  </footer>
+</body>
+</html>
